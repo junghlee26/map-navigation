@@ -40,7 +40,7 @@
 		A03E72BE21125355009FE13D = {
 			isa = PBXGroup;
 			children = (
-				A03E72C921125355009FE13D /* Map */,
+				A03E72C921125355009FE13D /* Map Navigation */,
 				A03E72C821125355009FE13D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A03E72C921125355009FE13D /* Map */ = {
+		A03E72C921125355009FE13D /* Map Navigation */ = {
 			isa = PBXGroup;
 			children = (
 				A03E72CA21125355009FE13D /* AppDelegate.swift */,
@@ -64,7 +64,7 @@
 				A03E72D321125355009FE13D /* LaunchScreen.storyboard */,
 				A03E72D621125355009FE13D /* Info.plist */,
 			);
-			path = Map;
+			path = "Map Navigation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
