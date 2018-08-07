@@ -16,6 +16,18 @@ class Spot: NSObject, MKAnnotation {
     let discipline: String
     let coordinate: CLLocationCoordinate2D
     
+    init?(json: [Any]) {
+        self.title = json[16] as? String ?? "No Title"
+        self.locationName = json[12] as! String
+        self.discipline = json[15] as! String
+        
+        if let lat = Double(json[18] as! String), let lon = Double(json[19] as! String) {
+            self.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+        } else {
+            self.coordinate = CLLocationCoordinate2D()
+        }
+    }
+    
     init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.locationName = locationName
